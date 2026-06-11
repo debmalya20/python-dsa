@@ -7,7 +7,7 @@ while n>0: # this goes till the number is greater than zero
     last_digit=n%10 # we are taking out the last digit
     total=total+(last_digit**length) # we are multipying the power of the last digit
     n=n//10 # and removing the last digit because we have done the execution 
-if temp==total:
+if temp==total: # is the temp is same as total then armstrong
     print(f"Your armstomr number is{total}")
 else:
     print(f"Sorry {temp} not a armstrog number")
