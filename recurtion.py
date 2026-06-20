@@ -27,12 +27,21 @@
 
 # print x=15 n=4 times
 
-def printnum(x,y):
-    if y==0:
-        return
-    print(x)
-    printnum(x,y-1)
-    
-printnum(15,4)
+# def printnum(x,y):
+#     if y==0:
+#         return
+#     print(x)
+#     printnum(x,y-1)
+
+# printnum(15,4)
+
+#Q) Print 1 to n using recution
+
+# def printnum(x,targer):
+#     if x>targer:
+#         return
+#     print(x)
+#     printnum(x+1,targer)
+# printnum(1,12)
 
 
