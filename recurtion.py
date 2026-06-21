@@ -45,3 +45,10 @@
 # printnum(1,12)
 
 
+# sum of all eliment till n
+
+def sums(i,target):
+    while i == target:
+        return i
+    return i + sums(i+1,target)
+print(sums(1,12))
