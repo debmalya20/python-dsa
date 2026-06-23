@@ -12,19 +12,29 @@
 
 
 # using pointer
-def is_palinderom(s):
-    length = len(s)
-    left = 0
-    right = length - 1
+# def is_palinderom(s):
+#     length = len(s)
+#     left = 0
+#     right = length - 1
 
-    while left < right:
-        if s[left] != s[right]:
-            return False
-        left += 1
-        right -= 1
+#     while left < right:
+#         if s[left] != s[right]:
+#             return False
+#         left += 1
+#         right -= 1
 
-    return True
+#     return True
 
 
-s = "alash"
-print(is_palinderom(s))
+# s = "alash"
+# print(is_palinderom(s))
+#using recurtion
+
+def is_palindrom(arr,l,r):
+    if l>=r:
+        return True
+    if arr[l]!=arr[r]:
+        return False
+    return is_palindrom(arr,l+1,r-1)
+arr="deb"
+print(is_palindrom(arr,0,len(arr)-1))
